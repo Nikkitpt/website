@@ -7,8 +7,8 @@ function Scroll() {
     const { scrollYProgress } = useScroll()
   
     return (
-      <animated.div style={{ opacity: scrollYProgress, marginBottom :"250px" }}>
-        A backend developer propelling startup visions to reality
+      <animated.div style={{ opacity: scrollYProgress, marginBottom :"250px", color: "black" }}>
+        A backend developer propelling visions to reality
       </animated.div>
     )
   }

@@ -1,8 +1,8 @@
 import './App.css';
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import React, { useEffect} from 'react';
+import {Hero} from "./components/Hero";
+import { About } from "./components/About";
+import {Projects} from "./components/Projects";
+import { useEffect } from 'react';
 import axios from 'axios';
 import { Container} from '@mui/material';
 // import ImageWithText from './components/ImageWithText';
@@ -19,6 +19,7 @@ function App() {
     })
 
   }, [])
+
   return (
     <Container sx={{ backgroundColor: '#f6e9d9'}} disableGutters maxWidth={false}>
       <header className="App-header">

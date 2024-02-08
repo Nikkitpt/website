@@ -35,7 +35,7 @@ return (
 );
 };
 
-export default function Hero() {
+export function Hero() {
     const [open, set] = useState(true);
     return (
         <>

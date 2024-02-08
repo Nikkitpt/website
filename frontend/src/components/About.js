@@ -6,7 +6,7 @@ import ImageWithText from './ImageWithText';
 
 
 
-export default function About() {
+export function About() {
   const containerStyle = {
     // display: 'flex',
     // flexDirection: 'column',

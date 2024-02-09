@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useScroll, animated } from '@react-spring/web'
 import { useTrail, a } from '@react-spring/web';
 import styles from '../styles.module.css'
+import { Grid } from '@mui/material';
 
 function Scroll() {
     const { scrollYProgress } = useScroll()
@@ -38,7 +39,10 @@ return (
 export function Hero() {
     const [open, set] = useState(true);
     return (
-        <>
+        <Grid item className="App-header" style={{
+            display: 'flex',
+            flexDirection: 'column',
+        }}>
             <div className={styles.container} onClick={() => set((state) => !state)}>
                 <Trail open={open}>
                     <span>Hello!</span>
@@ -48,6 +52,6 @@ export function Hero() {
                 </Trail>
             </div>
             <Scroll />
-        </>
+        </Grid>
     );
 }

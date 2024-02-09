@@ -17,8 +17,6 @@ export function About() {
 
   };
 
-
-
   return (
     <Container sx={containerStyle}>
       <Grid container spacing={2}>
@@ -33,7 +31,6 @@ export function About() {
         </Grid>
       </Grid>
     </Container>
-
 )
 }   
 

@@ -26,13 +26,13 @@ const trail = useTrail(items.length, {
 });
 
 return (
-    <div>
+    <Grid>
     {trail.map(({ height, ...style }, index) => (
         <a.div key={index} className={styles.trailsText} style={style}>
         <a.div style={{ height }}>{items[index]}</a.div>
         </a.div>
     ))}
-    </div>
+    </Grid>
 );
 };
 
@@ -43,14 +43,14 @@ export function Hero() {
             display: 'flex',
             flexDirection: 'column',
         }}>
-            <div className={styles.container} onClick={() => set((state) => !state)}>
+            <Grid className={styles.container} onClick={() => set((state) => !state)}>
                 <Trail open={open}>
                     <span>Hello!</span>
                     <span>I'm</span>
                     <span>Nicole</span>
                     <span>Davis</span>
                 </Trail>
-            </div>
+            </Grid>
             <Scroll />
         </Grid>
     );

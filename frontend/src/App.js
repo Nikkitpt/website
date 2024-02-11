@@ -12,6 +12,7 @@ const App = () =>
     }}>
       <Hero/>
       <About/>
+      <Projects/>
     </Grid>
 
 export default App;
